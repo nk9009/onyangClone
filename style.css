@@ -1,0 +1,211 @@
+:root {
+    --font-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    height: 100%; 
+}
+div, section, header, main, footer, p, h4 {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* ----------------header--------------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    width: 180px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.menu img:hover {
+    opacity: 0.5;
+}
+.menu a {
+    margin: 15px;
+    transition: opacity 0.1s;
+}
+.menu a:hover {
+    opacity: 0.5;
+}
+.menu li {
+    font-weight: 700;
+}
+.english {
+    font-size: 14px;
+    margin-left: 180px;
+    margin-right: 70px;
+}
+.english, .sns_bar a{
+    transition: opacity 0.1s;
+}
+.english:hover,
+.sns_bar a:hover {
+    opacity: 0.5;
+}
+.sns_bar {
+    font-size: 18px;
+}
+.sns_bar a {
+    margin-right: 40px;
+}
+.sns_bar .fa-bars {
+    cursor: pointer;
+}
+
+
+
+/* ----------------main--------------- */
+.bxslider {
+    width: 100%;
+}
+.bxslider li {
+
+}
+.bxslider img {
+    width: 100%;
+}
+/*bxSider 테두리 없애기*/
+.bx-wrapper {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 0 !important; 
+    margin-bottom: 0 !important;
+}
+.time_location {
+    display: flex; 
+    flex-wrap: nowrap; 
+    flex-shrink: 0; 
+    gap: 240px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    font-weight: 600;
+    padding-left: 4.5%;
+}
+.time_location span:nth-child(1) {
+    /* margin-right: 200px; */
+}
+.time_location i {
+    margin-right: 1px;
+}
+hr {
+    border: 2px solid red;
+}
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    gap: 6%; 
+    justify-content: flex-start;
+    align-items: top;
+    padding-left: 9%;
+    padding-top: 50px;
+} 
+.info_col {
+    list-style: none;
+    flex-basis: auto; 
+}
+.info_col h4 {
+    color: rgb(94, 94, 94);
+    transition: opacity 0.1s;
+    margin-bottom: 20px;
+}
+.info_col h4:hover {
+    opacity: 0.5;
+}
+.info_col li {
+    line-height: 200%;
+
+}
+.info_col li {
+    color: rgb(138, 138, 138);
+    transition: opacity 0.1s;
+}
+.info_col li:hover {
+    opacity: 0.5;
+}
+
+
+/* ----------------footer--------------- */
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: flex-start;
+    align-items: top;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 15%;
+    padding-left: 9%;
+}
+.footer_left {
+    font-weight: 700;
+    flex: 1;
+}
+.footer_middle {
+    display: flex;
+    flex-wrap: nowrap;
+    color: rgb(138, 138, 138);
+    font-size: 13px;
+    gap: 2%;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 4;
+}
+.footer_middle p {
+}
+.footer_middle a {
+    color: rgb(138, 138, 138);
+}
+.culture_logo {
+    height: 25px;
+    transition: opacity 0.1s;
+}
+.culture_logo:hover {
+    opacity: 0.5;    
+}
+
+@media screen and (max-width: 1200px) {
+    .english {
+        margin-left: 30px;
+    }
+    .footer_middle {
+        flex-wrap: wrap;
+    }
+
+
+}
+@media screen and (max-width: 990px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
